@@ -12,7 +12,7 @@ function login(event) {
     if (user) {
         localStorage.setItem("username", user.username);
         localStorage.setItem("email", user.email);
-        window.location.href = "Profile page.html";
+        window.location.href = "profile_page.html";
     } else {
         errorMessages.textContent = "Account not found. Please check your username and password.";
     }
