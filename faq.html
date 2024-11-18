@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terraria Kaisen - FAQ</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="faq.css">
+</head>
+<body>
+    <header id="header-section" class="p-3">
+        <h1 class="section-heading">Terraria Kaisen</h1>
+        <nav id="navbar" class="d-flex justify-content-center">
+            <a class="nav-link" href="index.html" tabindex="0">Home</a>
+            <a class="nav-link" href="updates.html" tabindex="0">Updates</a>
+            <a class="nav-link" href="content.html" tabindex="0">Mod Content</a>
+            <a class="nav-link" href="faq.html" tabindex="0">FAQ</a>
+        </nav>
+    </header>
+
+    <main id="content-wrapper" class="container mt-4">
+        <h2 class="section-heading">Frequently Asked Questions</h2>
+        <h4 class="paragraph-text">Comic Sans will answer all your questions!</h4>
+        
+        <figure class="mb-4">
+            <img class="featured-image-sans" src="sans.png" alt="Sans Image" class="img-fluid">
+            <img class="featured-image-text-box" src="undertale_text_box.png" alt="Undertale Text Box" class="img-fluid">
+        </figure>
+        
+        <p class="paragraph-text mb-4">*Psst, play this song if you want Sans to answer your question. He loves it!</p>
+        <audio controls autoplay loop>
+            <source src="Toby_Fox_-_sans_64962755.mp3" type="audio/mpeg">
+        </audio>
+
+        <section class="contentbox mt-3">
+            <div class="accordion-header"> <strong>How do I install Terraria Kaisen?</strong> </div>
+            <div class="accordion-content"> <p>You can't yet.</p> </div>
+
+            <div class="accordion-header"> <strong>Is Terraria Kaisen compatible with other mods?</strong> </div>
+            <div class="accordion-content"> <p>Hopefully.</p> </div>
+
+            <div class="accordion-header"> <strong>What platforms is Terraria Kaisen available on?</strong> </div>
+            <div class="accordion-content"> <p>The mod is available for the PC version of Terraria.</p> </div>
+
+            <div class="accordion-header" id="contact-header"> <strong>Contact Us</strong> </div>
+            <div class="accordion-content" id="contact-form-container">
+                <button id="open-contact-form" class="btn btn-primary">Open Contact Form</button>
+
+                <div id="popup-form" class="popup-form" style="display: none;">
+                    <div class="popup-content">
+                        <span id="close-form" class="close">&times;</span>
+                        <h2>Contact Us</h2>
+                        <form id="multi-step-form">
+                            <!-- Step 1 -->
+                            <div class="form-step active">
+                                <h3>Step 1: Your Info</h3>
+                                <div class="mb-3">
+                                    <label for="name" class="form-label">Name</label>
+                                    <input type="text" class="form-control" id="name" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="email" class="form-label">Email</label>
+                                    <input type="email" class="form-control" id="email" required>
+                                </div>
+                                <button type="button" class="btn btn-secondary reset">Reset</button>
+                                <button type="button" class="btn btn-primary next">Next</button>
+                            </div>
+        
+                            <!-- Step 2 -->
+                            <div class="form-step">
+                                <h3>Step 2: Your Message</h3>
+                                <div class="mb-3">
+                                    <label for="message" class="form-label">Message</label>
+                                    <textarea class="form-control" id="message" rows="3" required></textarea>
+                                </div>
+                                <button type="button" class="btn btn-secondary reset">Reset</button>
+                                <button type="button" class="btn btn-secondary back">Back</button>
+                                <button type="button" class="btn btn-primary next">Next</button>
+                            </div>
+        
+                            <!-- Step 3 -->
+                            <div class="form-step">
+                                <h3>Step 3: Confirmation</h3>
+                                <p>Thank you for your input! Please confirm your details before submission.</p>
+                                <p><strong>Name:</strong> <span id="confirm-name"></span></p>
+                                <p><strong>Email:</strong> <span id="confirm-email"></span></p>
+                                <p><strong>Message:</strong> <span id="confirm-message"></span></p>
+                                <button type="button" class="btn btn-secondary reset">Reset</button>
+                                <button type="button" class="btn btn-secondary back">Back</button>
+                                <button type="submit" class="btn btn-success">Submit</button>
+                            </div>
+        
+                            <div id="form-status"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="footer-container" class="mt-4 p-3 text-center">
+        <p>Developed by Madi Nurkenov & Makhabbat Khalel</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="faq.js"></script>
+    <script src="contact.js"></script>
+</body>
+</html>

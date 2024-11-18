@@ -1,0 +1,138 @@
+@font-face {
+    font-family: 'AndyBold';
+    src: url('fonts/AndyBold.ttf') format('truetype');
+    font-weight: bold;
+}
+
+* {
+    font-family: 'AndyBold', Arial, sans-serif;
+    text-align: center;
+}
+
+html {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    font-family: '1 Papyrus';
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+#header-section, #footer-container {
+    background-color: #333;
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+}
+
+.section-heading {
+    font-size: 2em;
+    margin: 0;
+}
+
+#footer-container {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+#navbar {
+    background-color: #333;
+    padding-top: 20px;
+}
+
+.nav-item {
+    display: inline;
+}
+
+.nav-link {
+    padding: 5px 15px;
+    border: 3px ridge black;
+    text-decoration: none;
+    color: #2980b9;
+    background-color: #333;
+    font-weight: bold;
+}
+
+.nav-link:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+#content-wrapper {
+    flex: 1;
+    padding: 20px;
+}
+
+.contentbox {
+    background-color: white;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+.paragraph-text {
+    line-height: 1.6;
+}
+
+figure {
+    text-align: center;
+    margin: 20px 0;
+}
+
+figcaption {
+    margin-top: 10px;
+    color: #666;
+}
+
+h2 {
+    color: #2980b9;
+    font-size: 1.5em;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-bottom: 5px;
+}
+
+form input {
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+form button:hover {
+    background-color: #45a049;
+}
+
+#errorMessages {
+    color: red;
+    font-size: 14px;
+}

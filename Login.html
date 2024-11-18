@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <title>Login</title>
+</head>
+<body>
+    <header id="header-section">
+        <h1 class="section-heading">Terraria Kaisen</h1>
+        <nav id="navbar" class="d-flex justify-content-center">
+            <a class="nav-link" href="index.html">Home</a>
+            <a class="nav-link" href="updates.html">Updates</a>
+            <a class="nav-link" href="content.html">Mod Content</a>
+            <a class="nav-link" href="faq.html">FAQ</a>
+        </nav>
+    </header>
+    <main id="content-wrapper" class="container mt-2">
+        <h2 style="color: #333;">Log in</h2>
+        <div class="contentbox mt-3">
+            <form id="signupForm" onsubmit="login(event)">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username"><br><br>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password"><br><br>
+
+                <button type="submit">Submit</button>
+                <p id="errorMessages" style="color: red;"></p>
+                <p>Do not have an account?</p>
+                <a href="SignUp.html">Sign up</a>
+            </form>
+        </div>
+    </main>
+    <script src="login.js"></script>
+    <footer id="footer-container">
+        <p class="paragraph-text">Developed by Madi Nurkenov & Makhabbat Khalel</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,173 @@
+/* Color Scheme */
+:root {
+    --primary-blue: #2E073F;
+    --secondary-red: #e74c3c;
+    --accent-purple: #e0e0e0;
+    --background-light: #F4F4F4;
+    --text-dark: #333;
+    --text-light: #e0e0e0;
+}
+
+@font-face {
+    font-family: 'AndyBold';
+    src: url('fonts/AndyBold.ttf') format('truetype');
+    font-weight: bold;
+}
+
+* {
+    font-family: 'AndyBold', Arial, sans-serif;
+    text-align: center; /* Centers text for all elements */
+}
+
+html {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    background-color: var(--background-light) !important;
+    color: var(--text-light);
+}
+
+.navbar {
+    background-color: #333;
+}
+.nav-link {
+    padding: 5px;
+    margin: 0 15px;
+    border: 3px ridge var(--text-light);
+    text-decoration: none;
+    color: var(--text-light) !important;
+    background-color: var(--primary-blue);
+    font-weight: bold;
+    transition: text-shadow 0.3s ease;
+    border-radius: 5px;  
+    background-color: #333;
+}
+.nav-link:hover {
+    background-color: white;
+    color: #333 !important;
+}
+
+.header-background {
+    background-color: var(--primary-blue);
+    color: var(--text-light);
+    padding: 15px 0;
+    text-align: center;
+}
+
+.footer-bg {
+    background-color: var(--text-dark);
+    color: var(--text-light);
+    padding: 15px 0;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+header, footer {
+    background-color: #333;
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+}
+
+#content-wrapper {
+    flex: 1;
+    padding: 20px;
+}
+
+.card-body{
+    background-color: #333;
+}
+
+.content-section {
+    margin-bottom: 20px;
+    background-color: var(--text-dark) !important;
+    padding: 15px;
+    padding-top: 1ch;
+    border-radius: 5px;
+}
+
+.section-title {
+    color: #333;
+    font-size: 2.4rem;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+    text-shadow: 1px 1px 2px var(--secondary-red), 0 0 1em var(--accent-purple), 0 0 2em var(--secondary-red);
+}
+
+main {
+    flex: 1;
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+    background-color: white;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Home Page Font Sizes */
+.page-text {
+    font-size: 1.2rem;
+}
+
+.big-page-text {
+    font-size: 2.4rem;
+}
+
+/* video control */
+#video-container {
+    position: relative;
+    text-align: center;
+}
+
+.hidden-checkbox {
+    display: none;
+}
+
+#resize-video:checked ~ #video-container #video-player {
+    width: 1120px;
+    height: 630px;
+}
+
+#video-container #video-player {
+    transition: all 0.3s ease;
+}
+
+/* Custom button styling replaced by Bootstrap button */
+.btn-resize-video {
+    display: inline-block;
+    margin: 5px;
+    padding: 10px;
+    padding-bottom: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: var(--text-dark) !important;
+    color: white;
+    text-decoration: none;
+    margin-bottom: 20px !important;
+}
+
+.my-custom-button {
+    margin-bottom: 20px; 
+    border-color: var(--text-dark);
+}
+

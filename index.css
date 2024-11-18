@@ -1,0 +1,227 @@
+@font-face {
+    font-family: 'AndyBold';
+    src: url('fonts/AndyBold.ttf') format('truetype');
+    font-weight: bold;
+}
+
+* {
+    font-family: 'AndyBold', Arial, sans-serif;
+    text-align: center; 
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    text-align: center; 
+    font-size: 20px;
+}
+
+.center-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: #F4F4F4;
+    color: #333;
+}
+
+#date-time {
+    font-size: 20px;
+    margin: 20px;
+    position: absolute;
+    left: 20px;
+}
+
+#day, #month-year, #time{
+    text-align: left; 
+}
+
+#site-header, #site-footer {
+    background-color: #333;
+    color: white;
+    padding: 15px 0;
+}
+
+#site-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#site-nav a {
+    padding: 5px;
+    margin: 0 15px;
+    border: 3px ridge black;
+    text-decoration: none;
+    color: #2980b9;
+    background-color: #333;
+    font-weight: bold;
+    transition: text-shadow 0.3s ease; 
+}
+
+#site-nav a:hover {
+    text-decoration: underline; 
+    text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 2em purple;
+}
+
+#main-content {
+    flex: 1;
+    padding: 20px;
+}
+
+.carousel-img {
+    max-width: 15%; 
+    margin: 0 auto; 
+    height: auto; 
+}
+
+.custom-carousel-control-prev,
+.custom-carousel-control-next {
+    background-color: #333; 
+    border: none; 
+    color: white; 
+    padding: 10px; 
+    border-radius: 5px; 
+}
+
+.custom-carousel-control-prev:hover,
+.custom-carousel-control-next:hover {
+    background-color: #2980b9; 
+}
+
+.sign-up {
+    padding: 5px;
+    margin: 0 15px;
+    border: 3px ridge black;
+    text-decoration: none;
+    color: #2980b9 !important;
+    background-color: #000000;
+    font-weight: bold;
+    transition: text-shadow 0.3s ease;
+    border-radius: 5px;
+}
+
+.sign-up:hover {
+    background-color: white;  
+    color: #333 !important;   
+}
+
+.navbar {
+    background-color: #333; 
+}
+
+.nav-link {
+    padding: 5px;
+    margin: 0 15px;
+    border: 3px ridge black;
+    text-decoration: none;
+    color: #2980b9 !important;
+    background-color: #000000;
+    font-weight: bold;
+    transition: text-shadow 0.3s ease;
+    border-radius: 5px;       
+}
+.nav-link:hover {
+    background-color: white;  
+    color: #333 !important;   
+}
+
+.section-block {
+    margin-bottom: 20px;
+}
+
+.intro-section {
+    padding: 20px;
+}
+
+/* Image Styling */
+#feature-figure {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.feature-image {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+}
+
+.feature-caption {
+    margin-top: 10px;
+    font-style: italic;
+    color: #555;
+}
+
+.features-list, .details-list {
+    list-style-position: inside;
+    padding-left: 0;
+}
+
+.link-text {
+    color: #2980b9; 
+    text-decoration: none; 
+    transition: text-shadow 0.3s ease; 
+}
+
+.link-text:hover {
+    text-decoration: underline; 
+    text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 2em purple;
+}
+
+.custom-button {
+    background-color: #333; 
+    border: none; 
+    color: white; 
+    padding: 10px; 
+    border-radius: 5px;
+}
+
+.custom-button:hover {
+    background-color: #2980b9; 
+}
+
+.star-rating {
+    direction: rtl;
+    display: inline-block;
+}
+
+.star {
+    font-size: 3rem;
+    color: lightgray;
+    cursor: pointer;
+}
+
+.star:hover,
+.star:hover ~ .star {
+    color: gold;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+input[type="radio"]:checked ~ .star {
+    color: gold; 
+}
+
+/* Light mode (default) */
+body {
+    background-color: #f4f4f4;
+    color: black;
+}
+
+/* Dark mode */
+body.dark-mode {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+/* Style for the toggle button */
+#mode-toggle {
+    margin: 10px;
+}
