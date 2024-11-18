@@ -185,30 +185,6 @@ body {
     background-color: #2980b9; 
 }
 
-.star-rating {
-    direction: rtl;
-    display: inline-block;
-}
-
-.star {
-    font-size: 3rem;
-    color: lightgray;
-    cursor: pointer;
-}
-
-.star:hover,
-.star:hover ~ .star {
-    color: gold;
-}
-
-input[type="radio"] {
-    display: none;
-}
-
-input[type="radio"]:checked ~ .star {
-    color: gold; 
-}
-
 /* Light mode (default) */
 body {
     background-color: #f4f4f4;
