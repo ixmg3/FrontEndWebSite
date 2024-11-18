@@ -10,8 +10,9 @@ function login(event) {
     const user = users.find(user => user.username === username && user.password === password);
 
     if (user) {
-        localStorage.setItem("username", username); // Set session
-        window.location.href = "index.html";
+        localStorage.setItem("username", user.username);
+        localStorage.setItem("email", user.email);
+        window.location.href = "Profile page.html";
     } else {
         errorMessages.textContent = "Account not found. Please check your username and password.";
     }
@@ -33,5 +34,6 @@ document.addEventListener("DOMContentLoaded", () => {
     }
     else {
         document.getElementById("logoutButton").style.display = "none";
+        document.getElementById("profilePage").style.display = "none";
     }
 });

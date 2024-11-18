@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Terraria Kaisen - Home</title>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="profile_page.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="BGcolor.js"></script>
     <script src="modeToggle.js" defer></script>
+    <title>Profile page</title>
 </head>
 <body class="changeable">
     <header id="site-header" class="mb-4">
@@ -15,7 +15,6 @@
             <div id="day"></div>
             <div id="month-year"></div>
             <div id="time"></div>
-            <button id="mode-toggle" class="btn btn-primary">Toggle Light/Dark Mode</button>
         </div>
         <script src="dateTime.js"></script>
         <div class="center-container">
@@ -32,9 +31,6 @@
                             </li>
                             <li class="nav-item">
                                 <button id="logoutButton" onclick="logout()" class="sign-up">Log out</button>
-                            </li>
-                            <li>
-                                <a id="profilePage" class="sign-up" href="profile_page.html">My profile</a>
                             </li>
                         </ul>
                     </div>
@@ -67,60 +63,21 @@
     </header>
 
     <main id="main-content">
-        <section class="intro-section">
-            <h1 class="big-home-page-text">Welcome to Terraria Kaisen</h1>
-            <p class="home-page-text">Terraria Kaisen is a mod focusing on the cursed techniques, abilities from the anime <a href="https://en.wikipedia.org/wiki/Jujutsu_Kaisen" target="_blank" class="link-text">Jujutsu Kaisen</a>. It's a passion project I'm hoping I'll finish.</p>
-        </section>
-        
-        <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="screenshot.jpg" class="d-block w-100 carousel-img" alt="Gameplay screenshot of Terraria Kaisen">
-                </div>
-                <div class="carousel-item">
-                    <img src="screenshot1.png" class="d-block w-100 carousel-img" alt="Image 2 Description">
-                </div>
-                <div class="carousel-item">
-                    <img src="screenshot2.jpg" class="d-block w-100 carousel-img" alt="Image 3 Description">
-                </div>
+        <div class="profile-container">
+            <div class="profile-image">
+              <img id="profile-pic" src="https://via.placeholder.com/100">
+              <input type="file" id="upload-image" style="display: none;">
+              <label for="upload-image" class="upload-button">Upload image</label>
             </div>
-            <button class="custom-carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="custom-carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>  
+            
+            <div class="profile-info">
+                <h2>My profile</h2>
+                <h4>Username: <span id="profile-username"></span></h4>
+                <h4>Email: <span id="profile-email"></span></h4>
+            </div>
         </div>
-        
-        <section class="section-block">
-            <h2 class="big-home-page-text">Why Choose Terraria Kaisen?</h2>
-            <p class="home-page-text">If you wanna ¯\_(ツ)_/¯</p>
-        </section>
-        
-        <section class="section-block">
-            <h2 class="big-home-page-text">Features</h2>
-            <ul class="features-list">
-                <li class="home-page-text">New Weapons and Items</li>
-                <li class="home-page-text">Additional Biomes</li>
-                <li class="home-page-text">Custom Bosses</li>
-                <li class="home-page-text">Enhanced Gameplay Mechanics</li>
-            </ul>
-        </section>
-        
-        <section class="section-block">
-            <h2 class="big-home-page-text">Key Components</h2>
-            <dl class="details-list">
-                <dt class="home-page-text">Abilities</dt>
-                <dd class="home-page-text">Abilities from popular characters like Gojo, Sukuna, Yuji!</dd>
-                <dt class="home-page-text">Characters</dt>
-                <dd class="home-page-text">Interact and spar with characters from the anime!</dd>
-                <dt class="home-page-text">Enemies</dt>
-                <dd class="home-page-text">Face many dangerous curses!</dd>
-            </dl>
-        </section>
     </main>
+
     <footer id="site-footer">
         <p class="home-page-text">Developed by Madi Nurkenov & Makhabbat Khalel</p>
     </footer>
@@ -128,5 +85,7 @@
     <script src="font_size.js"></script>
     <script src="index.js"></script>
     <script src="login.js"></script>
+    <script src="profile_page.js"></script>
+    <script src="signupform.js"></script>
 </body>
 </html>

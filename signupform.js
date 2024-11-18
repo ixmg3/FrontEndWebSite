@@ -43,7 +43,7 @@ function validateForm() {
 
     users.push({ username, email, password });
     localStorage.setItem("users", JSON.stringify(users));
-    alert("You successfully signed up! Please log in.")
+    alert("You successfully signed up! Please log in.");
     window.location.href = "login.html";
     return false;
 }
